@@ -1,0 +1,10 @@
+{
+  "name": "nomada-viajes-tp4",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nómada Viajes - TP4 Aplicaciones Web I",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
