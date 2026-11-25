@@ -1,0 +1,85 @@
+/*SELECTORES DE CLASE */
+
+/*CONTENIDOS PRINCIPALES*/
+
+/*Tarjeta de confirmación centrada*/
+/*Ocupa el mismo ancho que el contenido de las otras páginas*/
+.contenido-principal .confirmacion-reserva{
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border-top: 4px solid #317F7A;
+    padding: 2rem 1.5rem;
+}
+
+.contenido-principal .confirmacion-reserva p strong{
+    color: #B5492D;
+}
+
+/*El vínculo "Volver al inicio" se ve como botón*/
+.contenido-principal .confirmacion-reserva a{
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #0F6B66;
+    color: #FFFFFF;
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.contenido-principal .confirmacion-reserva a:hover{
+    background-color: #ee9b49;
+    color: #1F2D2B;
+}
+
+/*Lista de paquetes reservados*/
+.contenido-principal .confirmacion-items{
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.contenido-principal .confirmacion-items li{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #E3E0D8;
+}
+
+.contenido-principal .confirmacion-reserva .confirmacion-items strong,
+.contenido-principal .confirmacion-reserva .confirmacion-total strong{
+    color: #1F2D2B;
+}
+
+.contenido-principal .confirmacion-total{
+    font-size: 1.2rem;
+}
+
+.contenido-principal .confirmacion-acciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*Botón de WhatsApp en amarillo para diferenciarlo de "Volver al inicio"*/
+.contenido-principal .confirmacion-reserva a.boton-whatsapp{
+    background-color: #F2B134;
+    color: #1F2D2B;
+}
+
+/*Responsividad*/
+@media (max-width: 480px){
+    /*En celular el texto se alinea a la izquierda para leerse mejor*/
+    .contenido-principal .confirmacion-reserva{
+        text-align: left;
+        padding: 1.25rem 0.75rem;
+    }
+
+    /*En celular el vinculo "Volver al inicio" ocupa todo el ancho*/
+    .contenido-principal .confirmacion-reserva a{
+        display: block;
+        text-align: center;
+    }   
+}
